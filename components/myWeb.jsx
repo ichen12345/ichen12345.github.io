@@ -1,11 +1,10 @@
 import Header from './Header'
-import "./styles/style.css"
+import './styles/style.css'
 
-export default function myWeb(props) {
-    const {name} = props;
+export default function myWeb() {
     return(
          <Header
-            name={name}
+            name={'Ivy Chen'}
          />
         <h2>Skills</h2>
             <ul>
