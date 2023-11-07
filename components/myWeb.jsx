@@ -1,5 +1,6 @@
 import Header from './Header.jsx'
 import './styles/style.css'
+import React from 'react';
 
 export default function myWeb() {
     return(
