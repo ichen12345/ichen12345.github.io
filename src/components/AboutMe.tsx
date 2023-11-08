@@ -14,11 +14,11 @@ export default function AboutMe({ items, heading }: Props) {
     return (
       // <> means to use a fragment for all the children element below
       <>
-        <div class="container-fluid mt-3">
+        <div className="container-fluid mt-3">
         <h2>{heading}</h2>
             {items.length === 0 && <p>No item found</p>}
             <ul className="list-group">
-                <div class="col p-1 bg-dark text-white">
+                <div className="col p-1 bg-dark text-white">
                     {items.map((item, index) => (
                         <li
                             className={selectedIndex === index? 'list-group-item active' : 'list-group-item'}
