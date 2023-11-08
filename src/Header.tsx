@@ -8,7 +8,7 @@ export default function Header() {
         return (
             <div class="container-fluid pt-3">
             <header>
-                <h1>My name is {name}</h1>
+                <h1>Hello from {name}</h1>
             </header>
             <img src ={Harley}  class="rounded-circle" alt="Ivy's Profile Picture"/>
             </div>
