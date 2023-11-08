@@ -5,11 +5,10 @@ img {
     margin-right: auto;
 }
 
-body {
+h2 {
     font-family: 'Courier New', Courier, monospace;
-    background-color: gainsboro;
 }
 
 h1 {
-    text-align:center;
+    text-align: center;
 }
