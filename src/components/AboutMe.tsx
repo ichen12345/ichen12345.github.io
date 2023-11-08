@@ -14,19 +14,23 @@ export default function AboutMe({ items, heading }: Props) {
     return (
       // <> means to use a fragment for all the children element below
       <>
+        <div class="container-fluid mt-3">
         <h2>{heading}</h2>
             {items.length === 0 && <p>No item found</p>}
             <ul className="list-group">
-                {items.map((item, index) => (
-                    <li
-                        className={selectedIndex === index? 'list-group-item active' : 'list-group-item'}
-                        key={item}
-                        onClick={() => {setSelectedIndex(index);}}
-                    >
-                        {item}
-                    </li>
-                ))}
+                <div class="col-sm-3 p-1 bg-dark text-white">
+                    {items.map((item, index) => (
+                        <li
+                            className={selectedIndex === index? 'list-group-item active' : 'list-group-item'}
+                            key={item}
+                            onClick={() => {setSelectedIndex(index);}}
+                        >
+                            {item}
+                        </li>
+                    ))}
+                </div>
             </ul>
+
             <main>
                 <h2>Some Mysterious Facts About Me</h2>
                 <p>
@@ -41,6 +45,7 @@ export default function AboutMe({ items, heading }: Props) {
                     Elementum nibh tellus molestie nunc non blandit massa enim. Massa tempor nec feugiat nisl pretium fusce. Viverra justo nec ultrices dui. Gravida in fermentum et sollicitudin. Duis tristique sollicitudin nibh sit amet commodo nulla. Quisque egestas diam in arcu cursus euismod quis viverra. Vel turpis nunc eget lorem dolor sed. Varius sit amet mattis vulputate enim. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. At in tellus integer feugiat. Donec et odio pellentesque diam volutpat commodo sed. Ipsum suspendisse ultrices gravida dictum fusce ut. Sed blandit libero volutpat sed cras ornare arcu. Etiam sit amet nisl purus in mollis nunc sed id. Est ante in nibh mauris cursus. Pellentesque elit ullamcorper dignissim cras tincidunt. In nibh mauris cursus mattis molestie a.
                 </p>
             </main>
+        </div>
       </>
     );
 }
