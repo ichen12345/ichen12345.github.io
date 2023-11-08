@@ -18,7 +18,7 @@ export default function AboutMe({ items, heading }: Props) {
         <h2>{heading}</h2>
             {items.length === 0 && <p>No item found</p>}
             <ul className="list-group">
-                <div class="col-sm-3 p-1 bg-dark text-white">
+                <div class="col p-1 bg-dark text-white">
                     {items.map((item, index) => (
                         <li
                             className={selectedIndex === index? 'list-group-item active' : 'list-group-item'}
