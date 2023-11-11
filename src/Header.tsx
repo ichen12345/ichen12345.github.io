@@ -1,5 +1,3 @@
-import Harley from './images/Harley.jpg';
-
 // PascalCasing
 export default function Header() {
     // JSX: javaScript XML
@@ -8,9 +6,9 @@ export default function Header() {
         return (
             <div className="container-fluid pt-3">
             <header>
-                <h1>Hello from {name}</h1>
+                <h1>{name}</h1>
+                <p className="text-center">872-400-1052│ivy.x.chen@jpmchase.com│www.linkedin.com/in/ivychensmith│github.com/ichen12345</p>
             </header>
-            <img src ={Harley}  className="rounded-circle" alt="Ivy's Profile Picture"/>
             </div>
         );
     // If name is empty then return Hello all!
